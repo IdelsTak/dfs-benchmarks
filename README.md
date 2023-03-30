@@ -1,5 +1,9 @@
 # DFS Benchmarks
-Benchmarking various tree types using the depth-first search algorithm
+Benchmarking various tree types using the depth-first search algorithm:
+
+One critical element that could lead to performance problems with this benchmarking approach is the size and shape of the binary tree. In particular, if the binary tree is highly unbalanced, with one branch significantly deeper than the other, then the depth-first search algorithm may take longer to traverse the tree than if the tree were more balanced. This is because the algorithm will need to traverse a large number of nodes on the deeper branch before it can begin to explore the shallower branch.
+
+To mitigate this potential performance issue, it may be helpful to use a more balanced binary tree or to randomize the structure of the binary tree to ensure that it is not highly unbalanced. Additionally, it may be helpful to run the benchmark multiple times with different binary trees and to take the average elapsed time to get a more accurate measure of the algorithm's performance.
 
 | Tree Type            | Number of Nodes | Average Elapsed Time (nanoseconds) |
 | -------------------- | --------------- | ---------------------------------- |
